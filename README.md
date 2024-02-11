@@ -16,34 +16,34 @@ def calculate():
     else:
 
         if operation == "+":
-            a = number1 + number2
-            generate_label.config(text=f"{a}")
+            addition = number1 + number2
+            generate_label.config(text=f"{addition}")
 
         elif operation == "-":
-            b = number1 - number2
-            generate_label.config(text=f"{b}")
+            subtarction = number1 - number2
+            generate_label.config(text=f"{subtarction}")
 
         elif operation == "*":
-            c = number1 * number2
-            generate_label.config(text=f"{c}")
+            multiplication = number1 * number2
+            generate_label.config(text=f"{multiplication}")
 
         elif operation == "/":
             try:
-                d = number1 / number2
+                division = number1 / number2
             except:
                 generate_label.config(text=f"Error")
             else:
-                generate_label.config(text=f"{d}")
+                generate_label.config(text=f"{division}")
 
         elif operation == "**":
-            e = math.pow(number1, number2)
-            generate_label.config(text=f"{e}")
+            power = math.pow(number1, number2)
+            generate_label.config(text=f"{power}")
 
         elif operation == "log":
             try:
-                f = math.log(number1, number2)
+                logarithm = math.log(number1, number2)
             except:
                 generate_label.config(text=f"Error")
             else:
-                generate_label.config(text=f"{f}")
+                generate_label.config(text=f"{logarithm}")
 ```
